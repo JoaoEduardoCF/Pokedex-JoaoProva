@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokédex Interativa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="pokedex-container">
+    <h1>Pokédex</h1>
+
+    <!-- Busca -->
+    <div class="search-container">
+      <input type="text" id="pokemon-input" placeholder="Nome ou ID do Pokémon...">
+      <button id="search-btn">Pesquisar</button>
+    </div>
+
+    <!-- Jogo das Pokébolas -->
+    <div class="game-container">
+      <button id="start-game-btn">Escolher Pokémon Surpresa</button>
+      
+      <div id="pokeballs-wrapper" class="pokeballs-wrapper hidden">
+        <p>Escolha uma Pokébola:</p>
+        <div class="pokeballs-list">
+          <div class="pokeball" data-index="1"><div class="pokeball-button"></div></div>
+          <div class="pokeball" data-index="2"><div class="pokeball-button"></div></div>
+          <div class="pokeball" data-index="3"><div class="pokeball-button"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exibição do Pokémon -->
+    <div id="pokemon-display" class="pokemon-display hidden">
+      <div class="pokemon-header">
+        <h2 id="pokemon-name">---</h2>
+        <span id="pokemon-id">#---</span>
+      </div>
+      
+      <div class="img-wrapper">
+        <img id="pokemon-img" src="" alt="Imagem do Pokémon">
+      </div>
+      
+      <div id="pokemon-types" class="types-container"></div>
+      
+      <div class="pokemon-info">
+        <p><strong>Descrição:</strong> <span id="pokemon-description">...</span></p>
+        <p><strong>Altura:</strong> <span id="pokemon-height">-</span> m</p>
+        <p><strong>Peso:</strong> <span id="pokemon-weight">-</span> kg</p>
+        <p><strong>Habilidades:</strong> <span id="pokemon-abilities">-</span></p>
+      </div>
+
+      <div class="pokemon-stats">
+        <h3>Estatísticas Base</h3>
+        <ul id="stats-list"></ul>
+      </div>
+
+      <!-- Navegação Entre Pokémons -->
+      <div class="navigation-container">
+        <button id="prev-btn">← Anterior</button>
+        <button id="next-btn">Próximo →</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
