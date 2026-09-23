@@ -6,7 +6,6 @@
 }
 
 body {
-  /* Fundo com Imagem do Mapa de Pokémon */
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
               url('Imagens/imagem2.jpg') center/cover no-repeat fixed;
   display: flex;
@@ -86,7 +85,6 @@ button:active {
   margin-top: 15px;
 }
 
-/* Design da Pokébola em CSS Pure */
 .pokeball {
   width: 50px;
   height: 50px;
@@ -126,7 +124,6 @@ button:active {
   transform: scale(1.2);
 }
 
-/* Animações da Pokébola */
 .pokeball.shake {
   animation: shakeBall 0.5s infinite;
 }
@@ -150,7 +147,6 @@ button:active {
   100% { transform: scale(0); opacity: 0; }
 }
 
-/* Card do Pokémon */
 .pokemon-display {
   background-color: white;
   color: #333;
@@ -218,7 +214,6 @@ button:active {
   text-transform: capitalize;
 }
 
-/* Botões de Navegação */
 .navigation-container {
   display: flex;
   justify-content: space-between;
